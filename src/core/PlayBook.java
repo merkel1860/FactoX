@@ -9,9 +9,10 @@ public class PlayBook {
         int value;
         int result;
         int size;
-        /*value = readValue();
+
+        value = readValue();
         result = factoX(value);
-        display(value, result);*/
+        display(value, result);
 
         size = readValue();
         int[] table = readArray(size);
