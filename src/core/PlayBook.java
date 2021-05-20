@@ -8,9 +8,28 @@ public class PlayBook {
 	// write your code here
         int value;
         int result;
-        value = readValue();
+        int size;
+        /*value = readValue();
         result = factoX(value);
-        display(value, result);
+        display(value, result);*/
+
+        size = readValue();
+        int[] table = readArray(size);
+        display(table,size);
+    }
+
+    private static void display(int[] table, int length) {
+        for (int i =0; i< length; i++){
+            System.out.println("Table ["+(i+1)+"] = "+table[i]);
+        }
+    }
+
+    private static int[] readArray(int size) {
+        int[] temp = new int[20];
+        for (int i=0; i< size; i++){
+            temp[i] = readValue();
+        }
+        return temp;
     }
 
     private static void display(int value, int result) {
